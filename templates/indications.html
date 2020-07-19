@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Hypertension Treatment Indications{% endblock %}
+{% block heading %}Compelling treatment indications to consider:{% endblock %}
+{% block main %}
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Indication</th>
+            <th scope="col">Treatment Choice</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Heart Failure</th>
+            <td>ACEi/ARB + BB + diuretic + spironolactone</td>
+        </tr>
+        <tr>
+            <th scope="row">Post-MI/Clinical CAD</th>
+            <td>ACEi/ARB + BB</td>
+        </tr>
+        <tr>
+            <th scope="row">CAD (Coronary Artery Disease)</th>
+            <td>ACEi, BB, diuretic, CCB</td>
+        </tr>
+        <tr>
+            <th scope="row">Diabetes</th>
+            <td>ACEi/ARB, CCB, diuretic</td>
+        </tr>
+        <tr>
+            <th scope="row">CKD (Chronic Kidney Disease)</th>
+            <td>ACEi/ARB</td>
+        </tr>
+        <tr>
+            <th scope="row">Recurrent Stroke Prevention</th>
+            <td>ACEi, diuretic</td>
+        </tr>
+        <tr>
+            <th scope="row">Pregnancy</th>
+            <td>labetolol (first line), nifedipine, methyldopa</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock%}

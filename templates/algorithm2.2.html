@@ -1,0 +1,15 @@
+{% extends "base_algorithm.html" %}
+{% block title %}Hypertension Treatment Algorithm{% endblock %}
+{% block main %}
+    <h2>Recommended Action:</h2>
+    <p>Pharmacological intervention is recommended. Promote better lifestyle changes.</p>
+    <h4>Determine the type of pharmacological intervention:</h4>
+    <p>Is the patient black?*</p>
+    <button type="button" class="btn btn-outline-success" onclick="location.href='/bloodpressure/isblack'">Yes</button>
+    <button type="button" class="btn btn-outline-danger" onclick="location.href='/bloodpressure/notblack'">No</button><br><br>
+    <p>*This difference in treatment was noted in the recommendations of the <a href="https://thepafp.org/website/wp-content/uploads/2017/05/2014-JNC-8-Hypertension.pdf">JNC 8</a>. However, there is conflicting evidence on whether or not racial background determines the type of antihypertensive pharmacological intervention or if there are other variables that account for this difference:</p>
+    <ul>
+        <li><a href="../static/papers/helmer2018.pdf">"A Review of ACE Inhibitors and ARBs in Black Patients With Hypertension"</a> — appears to support the notion that there is a difference in pharmacological treatment</li>
+        <li><a href="../static/papers/palla2016.pdf">"Renin-Angiotensin System Inhibitors vs Other Antihypertensives in Hypertensive Blacks: A Meta-Analysis"</a> — does not appear to support the notion that there is a difference in pharmacological treatment</li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Ryan's Hypertension Algorithm{% endblock %}
+{% block heading %}Welcome to my hypertension algorithm web app!{% endblock %}
+{% block main %}
+    <h2>What does it do?</h2>
+    <p>My hypertension app serves as an interactive tool for healthcare providers to determine the best protocol to treat patients with hypertension. This algorithm is a combination of treatment recommendations from the American Heart Association (AHA) and the Eighth Joint National Committee (JNC 8).</p>
+    <p><em><strong style="color: red;">Disclaimer:</strong></em> The recommendations made in this algorithm have not been evaluated by medical authorities. <strong>DO NOT</strong> use this algorithm for real-life diagnosis.</p>
+    <h2>Sources:</h2>
+    <ul>
+        <li><a href="../static/sources/aafp.pdf">American Academy of Family Physicians (AAFP)</a></li>
+        <li><a href="../static/sources/aha.pdf">American Heart Association (AHA)</a></li>
+        <li><a href="../static/sources/jnc8.pdf">Eighth Joint National Committee (JNC 8)</a></li>
+        <li><a href="https://www.mayoclinic.org/diseases-conditions/low-blood-pressure/symptoms-causes/syc-20355465">Mayo Clinic</a></li>
+        <li><a href="https://targetbp.org/bp-treatment-algorithm-tool/">Target: BP</a></li>
+    </ul>
+    <h2>Source code (GitHub):</h2>
+    <ul>
+        <li><a href="https://github.com/ryanhaah/hypertension-algorithm.git">Click here to see the code I wrote for this app!</a></li>
+    </ul>
+    <h2>Algorithm flowchart:</h2>
+    <img src="../static/images/algorithm.jpeg" alt="A flowchart of the hypertension algorithm." class="img-fluid mx-auto d-block" width="900">
+{% endblock %}

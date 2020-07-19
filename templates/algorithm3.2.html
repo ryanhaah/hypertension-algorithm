@@ -1,0 +1,11 @@
+{% extends "base_algorithm.html" %}
+{% block title %}Hypertension Treatment Algorithm{% endblock %}
+{% block main %}
+    <h2>Recommended Action:</h2>
+    <p>Initiate treatment with thiazide or CCB, alone or in combination.</p>
+    <h2>When to Reassess:</h2>
+    <p>Reassess in 1 month to check whether the patient has reached the BP goal of < 130/80 mm Hg.</p>
+    <h4>After reassessment, is the patient's BP < 130/80 mm Hg?</h4>
+    <button type="button" class="btn btn-outline-success" onclick="location.href='/bloodpressure/goal/success'">Yes</button>
+    <button type="button" class="btn btn-outline-danger" onclick="location.href='/bloodpressure/goal/1'">No</button>
+{% endblock %}

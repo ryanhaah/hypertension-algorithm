@@ -1,0 +1,19 @@
+{% extends "base_algorithm.html" %}
+{% block title %}Hypertension Treatment Algorithm{% endblock %}
+{% block heading %}The patient has stage 2 hypertension.{% endblock %}
+{% block main %}
+    <h6>(Systolic BP range of 140 - 180 mm Hg OR Diastolic BP range of 90 - 120 mm Hg)</h6>
+    <p>Please select all of the following *conditions that apply to the patient:</p>
+    <form action="/bloodpressure/stage2" method="POST">
+        <input type="checkbox" value="1" name="condition">
+        <label for="diabetes">Diabetes</label><br>
+        <input type="checkbox" value="2" name="condition">
+        <label for="CDK">Chronic Kidney Disease (CKD)</label><br>
+        <input type="checkbox" value="3" name="condition">
+        <label for="none">None of the above</label><br>
+        <input class="btn btn-secondary submit" type="submit" value="Submit">
+    </form><br>
+    <p>*For other conditions, please refer to the <a href="/indications">"Indications"</a> tab.</p>
+    <p><em>Try selecting different combinations of conditions to see the different outcomes below:</em></p>
+    <img src="../static/images/condition.jpeg" alt="A flowchart of the condition portion of the hypertension algorithm." class="img-fluid mx-auto d-block" width="900">
+{% endblock %}

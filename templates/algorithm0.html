@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Hypertension Treatment Algorithm{% endblock %}
+{% block heading %}My hypertension treatment algorithm:{% endblock %}
+{% block main %}
+    <p>Please enter the patient's systolic and diastolic blood pressures below:</p>
+    <form action="/bloodpressure" method="POST">
+        <label for="systolic">Systolic Blood Pressure:</label><br>
+        <input type="number" min="1" id="systolic" name="systolic" placeholder="Enter a value" required><br><br>
+        <label for="diastolic">Diastolic Blood Pressure:</label><br>
+        <input type="number" min="1" id="diastolic" name="diastolic" placeholder="Enter a value" required><br><br>
+        <input class="btn btn-secondary" type="submit" value="Submit">
+    </form><br>
+    <p><em>Try inputting different SBP and DBP values to see the different outcomes* below:</em></p>
+    <img src="../static/images/diagnosis.jpeg" alt="A flowchart of the diagnosis portion of the hypertension algorithm." class="img-fluid mx-auto d-block" width="800">
+    <p>*SBP and DBP combinations that fall into two different outcomes will result in the more hypertensive condition being the diagnosis (e.g., SBP = 135 mm Hg and DBP = 100 mm Hg results in the Stage 2 Hypertension rather than Stage 1 Hypertension). </p>
+{% endblock %}
